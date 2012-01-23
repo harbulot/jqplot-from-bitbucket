@@ -301,9 +301,9 @@
         this._dataColors = [];
         this._barPoints = [];
         
-        if (this.barWidth == null) {
+        //if (this.barWidth == null) {
             this.renderer.setBarWidth.call(this);
-        }
+        //}
         
         var temp = this._plotSeriesInfo = this.renderer.calcSeriesNumbers.call(this);
         var nvals = temp[0];
@@ -549,9 +549,9 @@
         var pointx, points, pointy, nvals, nseries, pos;
         
         if (this._stack && this.shadow) {
-            if (this.barWidth == null) {
+            //if (this.barWidth == null) {
                 this.renderer.setBarWidth.call(this);
-            }
+            //}
         
             var temp = this._plotSeriesInfo = this.renderer.calcSeriesNumbers.call(this);
             nvals = temp[0];
